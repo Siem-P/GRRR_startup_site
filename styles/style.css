@@ -12,26 +12,51 @@
   --body-font-default: "nhd-light", Fallback, sans-serif;
 }
 
-/* Font declaration */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
-  font-family: "hk-heavy";
-  src: url(assets/fonts/herokid/Fontspring-DEMO-herokid-heavyexpanded.otf)
-    format("otf");
+  font-family: 'FONTSPRING DEMO - Herokid ExtraLight Wide';
+  src: url('//assets/Fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2') format('woff2'),
+      url('//assets/Fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Herokid Bold Condensed';
+  src: url('FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff2') format('woff2'),
+      url('FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Herokid Bold Expanded';
+  src: url('FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff2') format('woff2'),
+      url('FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FONTSPRING DEMO - Herokid Heavy Expanded';
+  src: url('FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff2') format('woff2'),
+      url('FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff') format('woff');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "hk-regular";
-  src: url(assets/fonts/herokid/Fontspring-DEMO-herokid-regularexpanded.otf)
-    format("otf");
-  font-weight: 00;
-}
-
-@font-face {
-  font-family: "nhd-light";
-  src: url(assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf)
-    format("ttf");
-  font-weight: 00;
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('NeueHaasDisplay-Mediu.woff2') format('woff2'),
+      url('NeueHaasDisplay-Mediu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* CSS reset */
