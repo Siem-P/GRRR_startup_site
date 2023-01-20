@@ -7,53 +7,56 @@
   --secondary-color-blue: #5145ff;
   --white: #fff;
   --gray99: #3c3b34;
-  
-  --heading-font-title: "hk-heavy", Fallback, sans-serif;
-  --body-font-default: "nhd-light", Fallback, sans-serif;
+
+  --para-font: "bebas neue";
+  --heading-font-bold: "FONTSPRING DEMO - Herokid Heavy Expanded";
+  --heading-font-bold-condensed: "FONTSPRING DEMO - Herokid Bold Condensed";
+  --heading-font-light: "FONTSPRING DEMO - Herokid ExtraLight Wide";
+  --body-copy: "Neue Haas Grotesk Display Pro";
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Herokid ExtraLight Wide';
-  src: url('//assets/Fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2') format('woff2'),
-      url('//assets/Fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff') format('woff');
+  font-family: "FONTSPRING DEMO - Herokid ExtraLight Wide";
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2") format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HeroKidExtraLightWideRegular.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Herokid Bold Condensed';
-  src: url('FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff2') format('woff2'),
-      url('FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff') format('woff');
+  font-family: "FONTSPRING DEMO - Herokid Bold Condensed";
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff2") format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Herokid Bold Expanded';
-  src: url('FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff2') format('woff2'),
-      url('FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff') format('woff');
+  font-family: "FONTSPRING DEMO - Herokid Bold Expanded";
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff2") format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Herokid Heavy Expanded';
-  src: url('FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff2') format('woff2'),
-      url('FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff') format('woff');
+  font-family: "FONTSPRING DEMO - Herokid Heavy Expanded";
+  src: url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff2") format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('NeueHaasDisplay-Mediu.woff2') format('woff2'),
-      url('NeueHaasDisplay-Mediu.woff') format('woff');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../assets/fonts/NeueHaasDisplay-Light.woff2") format("woff2"),
+    url("../assets/fonts/NeueHaasDisplay-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -79,18 +82,15 @@ a {
 h1,
 h2 {
   color: var(--secondary-color);
-  font-family: var(--font-title);
+  font-family: var(--heading-font-bold);
 }
 
 h2 {
   padding-bottom: 0.5em;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
+  scroll-behavior: smooth;
   width: 100%;
   font-family: var(--font-default);
   /* background-color: var(--primary-color-); */
@@ -165,12 +165,14 @@ body {
   color: var(--primary-color-neon-green);
   transition: ease 250ms;
 }
+
 .call-to-action a:hover {
   transform: translateY(-2px);
   background: var(--primary-color-neon-green);
   color: var(--primary-color-black);
   transition: transform 250ms ease-in-out;
 }
+
 .call-to-action a:active {
   transform: scale(0.9);
 }
@@ -230,11 +232,11 @@ section {
   padding: 1em;
 }
 
-main > article h2 {
+main>article h2 {
   padding-top: 1em;
 }
 
-main > article .first-word {
+main>article .first-word {
   padding: 0.2em 0.5em;
   margin-bottom: 1em;
   background-color: var(--white);
@@ -252,7 +254,7 @@ section p {
   max-width: 30em;
 }
 
-#whos-behind-this-article > .portfolio-image {
+#whos-behind-this-article>.portfolio-image {
   margin-top: 4em;
   z-index: 3;
   background: url(/assets/images/GRRR-portfolio.png);
@@ -262,7 +264,6 @@ section p {
   aspect-ratio: 1/1;
   width: 100%;
 }
-
 
 .portfolio-image:nth-of-type(1) {
   /* padding: 0; */
@@ -279,7 +280,6 @@ section p {
   position: relative;
   left: -1.3em;
 }
-
 
 #whos-behind-this-article p {
   /* background-color: #3c3b34ce; */
