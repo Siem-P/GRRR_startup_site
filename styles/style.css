@@ -1,26 +1,12 @@
-/* Custom properties */
-:root {
-  --primary-color-black: black;
-  --primary-color-beige: #ffeddc;
-  --primary-color-neon-green: #a5fe13;
-  --neon-yellow: #e1ff62;
-  --secondary-color-blue: #5145ff;
-  --white: #fff;
-  --gray99: #3c3b34;
-
-  --para-font: "bebas neue";
-  --heading-font-bold: "FONTSPRING DEMO - Herokid Heavy Expanded";
-  --heading-font-bold-condensed: "FONTSPRING DEMO - Herokid Bold Condensed";
-  --heading-font-light: "FONTSPRING DEMO - Herokid ExtraLight Wide";
-  --body-copy: "Neue Haas Grotesk Display Pro";
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 
 @font-face {
   font-family: "FONTSPRING DEMO - Herokid ExtraLight Wide";
-  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2") format("woff2"),
-    url("../assets/fonts/FONTSPRINGDEMO-HeroKidExtraLightWideRegular.woff") format("woff");
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2")
+      format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HeroKidExtraLightWideRegular.woff")
+      format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -28,8 +14,10 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Herokid Bold Condensed";
-  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff2") format("woff2"),
-    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff") format("woff");
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff2")
+      format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldCondensedRegular.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -37,8 +25,10 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Herokid Bold Expanded";
-  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff2") format("woff2"),
-    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff") format("woff");
+  src: url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff2")
+      format("woff2"),
+    url("../assets/fonts/FONTSPRINGDEMO-HerokidBoldExpandedRegular.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -46,8 +36,10 @@
 
 @font-face {
   font-family: "FONTSPRING DEMO - Herokid Heavy Expanded";
-  src: url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff2") format("woff2"),
-    url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff") format("woff");
+  src: url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff2")
+      format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-HerokidHeavyExpandedRegular.woff")
+      format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -61,10 +53,26 @@
   font-style: normal;
   font-display: swap;
 }
+/* Custom properties */
+:root {
+  --primary-color-black: black;
+  --primary-color-beige: #ffeddc;
+  --primary-color-neon-green: #a5fe13;
+  --neon-yellow: #e1ff62;
+  --secondary-color-blue: #5145ff;
+  --white: #fff;
+  --gray99: #3c3b34;
+
+  --para-font: 'bebas neue';
+  --heading-font-bold: "FONTSPRING DEMO - Herokid Heavy Expanded";
+  --heading-font-bold-condensed: "FONTSPRING DEMO - Herokid Bold Condensed";
+  --heading-font-bold-expanded: "FONTSPRING DEMO - Herokid Bold Expanded";
+  --heading-font-light: "FONTSPRING DEMO - Herokid ExtraLight Wide";
+  --body-copy: "Neue Haas Grotesk Display Pro";
+}
 
 /* CSS reset */
 * {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,24 +87,24 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2 {
+h1 {
+  display: block;
   color: var(--secondary-color);
   font-family: var(--heading-font-bold);
 }
 
 h2 {
+  display: block;
+  font-family: var(--heading-font-bold-condensed);
   padding-bottom: 0.5em;
 }
 
 body {
   scroll-behavior: smooth;
   width: 100%;
-  font-family: var(--font-default);
-  /* background-color: var(--primary-color-); */
+  font-family: var(--body-copy);
   color: var(--primary-color-black);
   line-height: 1.4;
-  font-weight: 500;
 }
 
 /* ----------------- */
@@ -115,16 +123,18 @@ body {
   position: static;
 }
 
-/* Span  */
-.company-name {
+header .company-name {
+  /* letter-spacing: 1px; */
   position: absolute;
   top: 5em;
-  left: -1.5em;
+  left: -.8em;
   vertical-align: middle;
-  font-weight: bolder;
+  font-family: var(--para-font);
+  font-size: 1.3em; 
   background-color: var(--primary-color-neon-green);
   color: var(--primary-color-black);
-  padding: 0.2em 0.8em;
+  padding: 0.3em 0.9em 0.1em 0.9em;
+
   transform: rotate(-90deg);
 }
 
@@ -138,8 +148,7 @@ body {
 }
 
 .hero-intro span {
-  font-size: 2em;
-  /* line-height: 0%; */
+  font-size: 1.5em;
 }
 
 /* Hero Apply Button */
@@ -159,22 +168,32 @@ body {
 }
 
 .call-to-action .apply-button {
-  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 8em;
+  /* padding: 1em 1em; */
   background-color: var(--primary-color-black);
   border: var(--primary-color-neon-green) 5px solid;
   color: var(--primary-color-neon-green);
   transition: ease 250ms;
 }
 
-.call-to-action a:hover {
-  transform: translateY(-2px);
+.call-to-action .apply-button:hover {
+  transform: translateY(-3px);
   background: var(--primary-color-neon-green);
   color: var(--primary-color-black);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease;
 }
 
 .call-to-action a:active {
   transform: scale(0.9);
+}
+
+/* Copyright character */
+.demo-font {
+  font-family: var(--para-font);
 }
 
 /* Yellow banner - Five zero zero zero zero */
@@ -184,13 +203,14 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 6em;
-  font-weight: bolder;
+  font-family: var(--heading-font-bold);
+  font-size: 5.6em;
   color: var(--primary-color-black);
   background-color: var(--primary-color-neon-green);
   width: 100%;
   height: fit-content;
-  padding: 0;
+  padding: 0.3em;
+  line-height: 1;
 }
 
 .five-zero-section .five-zero {
@@ -208,7 +228,7 @@ body {
   font-size: large;
 }
 
-.hero-intro-text .hero-intro-text-p {
+.hero-intro-text .introduction-text {
   padding: 1.5em 1em;
 }
 
@@ -228,20 +248,21 @@ body {
 
 article,
 section {
+  
   background: var(--primary-color-beige);
   padding: 1em;
 }
 
-main>article h2 {
-  padding-top: 1em;
+main > article h2 {
+ padding: 1em 0;
 }
 
-main>article .first-word {
-  padding: 0.2em 0.5em;
-  margin-bottom: 1em;
+main > article .first-word {
+  padding: 0.3em 0.3em 0.2em 0.3em;
+  /* margin-bottom: 2em; */
   background-color: var(--white);
   border: 0.1em solid var(--primary-color-black);
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 article ol,
@@ -254,7 +275,18 @@ section p {
   max-width: 30em;
 }
 
-#whos-behind-this-article>.portfolio-image {
+article {
+  overflow-x: hidden;
+  /* display: block; */
+}
+
+/* article span:nth-child(2){
+  margin-top: 1em;
+  display: block;
+  
+} */
+
+.whos-behind-this-article > .portfolio-image {
   margin-top: 4em;
   z-index: 3;
   background: url(/assets/images/GRRR-portfolio.png);
@@ -263,6 +295,7 @@ section p {
   /* object-fit: cover; */
   aspect-ratio: 1/1;
   width: 100%;
+  
 }
 
 .portfolio-image:nth-of-type(1) {
@@ -281,7 +314,56 @@ section p {
   left: -1.3em;
 }
 
-#whos-behind-this-article p {
-  /* background-color: #3c3b34ce; */
-  /* color: var(--primary-color-beige); */
+.how-it-works ol li {
+  position: ;
+}
+
+
+.whos-eligible ul li {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding-left: 0.8em;
+  margin: 1em;
+  height: 2em;
+  width: 22em;
+  border-radius: .5em;
+}
+
+.whos-eligible ul li::before {
+  left: 0;
+  margin-right: .7em;
+  position: relative;
+  content: "";
+  background-color: var(--primary-color-beige);
+  border-radius: 50%;
+  width: .8em;
+  height: .8em;
+  z-index: 10;
+}
+
+/* Partner Section */
+.partners {
+  background-color: var(--primary-color-black);
+}
+
+.partners ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partners ul li img {
+  background-color: var(--white);
+  width: 10em;
+}
+
+/* Footer */
+footer {
+  padding: 1em;
+}
+
+footer span {
+  text-decoration: underline;
 }
