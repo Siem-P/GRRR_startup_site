@@ -33,16 +33,18 @@ gsap.from(".five-zero-section > span", {
 
 
 // GRRR Portfolio right to left animation 
-gsap.from(".whos-behind-this-article .portfolio-image", {
+gsap.from(".image-wrapper .portfolio-image", {
     scrollTrigger: {
         trigger: ".whos-behind-this-article",
-        start: "center 40%",
+        start: "center 60%",
         end: "bottom 80%",
         // markers: true,
-        toggleActions: "play none none pause",
+        toggleActions: "play none none none",
     },
+    
     stagger: 0.5,
     x: 500,
     duration: 1,
     ease: Power2.easeOut
 })
+
