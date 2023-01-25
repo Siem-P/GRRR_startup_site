@@ -1,0 +1,81 @@
+@media (min-width: 400px) {
+    .whos-behind-this-article .portfolio-image {
+        display: flex;
+        width: 85%;
+        
+    }
+
+}
+
+@media (min-width: 600px) {
+    .whos-behind-this-article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .whos-behind-this-article .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .whos-behind-this-article .image-wrapper > .portfolio-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 40em;
+    }
+    
+    main > article > h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    main > article p {
+        margin: 0 auto;
+    }
+
+    .hero-intro-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-intro-image img {
+        
+        max-width: 45em;
+    }
+    
+    .partners ul li img { 
+        max-width: 8em;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .five-zero-section > .five-zero {
+        position: relative;
+    }
+}
+
+
+@media (min-width: 1920px) {
+
+    main > article > p {
+        max-width: 30em;
+    }
+    .whos-behind-this-article .image-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .whos-behind-this-article .image-wrapper > .portfolio-image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;;
+        
+        
+
+    }
+}
