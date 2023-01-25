@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-
 @font-face {
   font-family: "FONTSPRING DEMO - Herokid ExtraLight Wide";
   src: url("../assets/fonts/FONTSPRINGDEMO-HerokidExtraLightWideRegular.woff2")
@@ -61,9 +60,17 @@
   --neon-yellow: #e1ff62;
   --secondary-color-blue: #5145ff;
   --white: #fff;
-  --gray99: #3c3b34;
 
-  --para-font: 'bebas neue';
+  /* Test colors */
+  --gray99: #3c3b34;
+  --redish: rgb(196, 108, 108);
+  --blueish: rgb(63, 63, 187);
+  --greenish: rgb(87, 180, 87);
+  --yellowish: rgb(199, 199, 91);
+
+
+
+  --para-font: "bebas neue";
   --heading-font-bold: "FONTSPRING DEMO - Herokid Heavy Expanded";
   --heading-font-bold-condensed: "FONTSPRING DEMO - Herokid Bold Condensed";
   --heading-font-bold-expanded: "FONTSPRING DEMO - Herokid Bold Expanded";
@@ -107,6 +114,12 @@ body {
   line-height: 1.4;
 }
 
+main {
+  background: var(--primary-color-beige);
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* ----------------- */
 /* Hero Section */
 /* ----------------- */
@@ -124,31 +137,36 @@ body {
 }
 
 header .company-name {
-  /* letter-spacing: 1px; */
   position: absolute;
   top: 5em;
-  left: -.8em;
+  left: -0.8em;
   vertical-align: middle;
   font-family: var(--para-font);
-  font-size: 1.3em; 
+  font-size: 1.3em;
   background-color: var(--primary-color-neon-green);
   color: var(--primary-color-black);
   padding: 0.3em 0.9em 0.1em 0.9em;
-
   transform: rotate(-90deg);
 }
 
+.hero-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* Hero Intro Heading Level 1 */
 .hero-intro h1 {
+  
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   max-width: 6.5em;
   font-size: 3em;
-  padding-bottom: 1em;
-  padding-left: 0.7em;
+  /* padding-bottom: 1em; */
+  /* padding-left: 0.7em; */
 }
 
 .hero-intro span {
   font-size: 1.5em;
+  /* text-align: left; */
 }
 
 /* Hero Apply Button */
@@ -249,17 +267,16 @@ header .company-name {
 article,
 section {
   width: 100%;
-  background: var(--primary-color-beige);
+  /* width: 80%; */
   padding: 1em;
 }
 
 main > article h2 {
- padding: 0.7em 0;
+  padding: 0.7em 0;
 }
 
 main > article .first-word {
   padding: 0.3em 0.3em 0.2em 0.3em;
-  /* margin-bottom: 2em; */
   background-color: var(--white);
   border: 0.1em solid var(--primary-color-black);
   font-size: 1.5em;
@@ -270,52 +287,80 @@ ul {
   padding: 0.8em 0em;
 }
 
-article,
-section p {
-  /* max-width: 30em; */
+p {
+  max-width: 30em;
 }
 
 article {
   overflow-x: hidden;
-  /* display: block; */
 }
 
-/* article span:nth-child(2){
-  margin-top: 1em;
-  display: block;
-  
-} */
-
-.whos-behind-this-article > .portfolio-image {
-  margin-top: 4em;
-  z-index: 3;
-  background: url(/assets/images/GRRR-portfolio.png);
-  background-size: cover;
-  background-position: 50%;
-  /* object-fit: cover; */
-  aspect-ratio: 1/1;
+.whos-behind-this-article .image-wrapper > .portfolio-image {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  /* background-size: cover;; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50%; */
+  /* aspect-ratio: 1/1; */
   width: 100%;
-  
 }
 
 .portfolio-image:nth-of-type(1) {
-  /* padding: 0; */
-  position: relative;
-  left: -1.3em;
+  background: url(/assets/images/ocean-cleanup.png);
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: 0%; */
 }
 
 .portfolio-image:nth-of-type(2) {
-  position: relative;
-  right: -1.3em;
+  background: url(/assets/images/GRRR-portfolio.png);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .portfolio-image:nth-of-type(3) {
-  position: relative;
-  left: -1.3em;
+  background: url(/assets/images/what-we-do.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 30%;
+  aspect-ratio: 1/1;
 }
 
-.how-it-works ol li {
+.how-it-works ol {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+.how-it-works ol li {
+  padding: 0 0.5em;
+  width: 100%;
+  height: 5em;
+  border-radius: 1em 1em 0 0;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  font-family: var(--heading-font-bold-condensed);
+  font-size: 1em;
+}
+
+.phase-one {
+  background-color: var(--blueish);
+}
+.phase-two {
+  background-color: var(--redish);
+}
+.phase-three {
+  background-color: var(--yellowish);
+}
+
+.phase-four {
+  background-color: var(--greenish);
 }
 
 
@@ -327,23 +372,32 @@ article {
   margin: 1em 0;
   height: auto;
   width: 100%;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .whos-eligible ul li::before {
   left: 0;
-  margin-right: .5em;
+  margin-right: 0.5em;
   position: relative;
   content: "";
   background-color: var(--primary-color-beige);
   border-radius: 50%;
-  width: .8em;
-  height: .8em;
+  width: 0.8em;
+  height: 0.8em;
 }
 
 /* Partner Section */
 .partners {
   background-color: var(--primary-color-black);
+}
+
+.partners h2 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--heading-font-bold-condensed);
+  font-weight: bolder;
+  color: var(--primary-color-neon-green);
+  font-size: 2em;
 }
 
 .partners ul {
@@ -355,11 +409,13 @@ article {
 
 .partners ul li img {
   background-color: var(--white);
-  width: 10em;
+  max-width: 6em;
 }
 
 /* Footer */
 footer {
+  display: flex;
+  justify-content: center;
   padding: 1em;
 }
 
