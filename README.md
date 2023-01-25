@@ -25,6 +25,16 @@ Gebruikte technieken
 * JavaScript
 * GSAP - JavaScript Animation Library
 
+## Installatie
+1. Clone of download deze respository.
+2. Ga naar de root directory van het project.
+3. Open het index.html bestand, hierdoor wordt de homepagina van de website geopend.
+
+GSAP wordt ingeladen via een url in de code. 
+
+## Gebruik
+Op deze website is alle content te zien door middel van er doorheen te scrollen. Alles komt op zn tij
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
