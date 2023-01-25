@@ -9,23 +9,23 @@ Dit project omvat een One-Pager voor de GRRR 50K Campagne website.
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-## Kenmerken
+## ⚡ Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 Dit project is gemaakt met HTML, CSS en JavaScript. Verder staat hieronder een korte lijst met gebruikte tools en middelen.
 
 Tools
-* Visual Studio Code
-* Concepts (iPad)
-* Pen & Papier
+* 🖥️ Visual Studio Code
+* 🎨 Concepts (iPad)
+* ✍ Pen & Papier
 
 
 Gebruikte technieken
-* HTML
-* CSS
-* JavaScript
-* GSAP - JavaScript Animation Library
+* 💻 HTML
+* 📐 CSS
+* ⚙️ JavaScript
+* 🟢 GSAP - JavaScript Animation Library
 
-## Installatie
+## 🔩 Installatie
 1. Clone of download deze respository.
 2. Ga naar de root directory van het project.
 3. Open het index.html bestand, hierdoor wordt de homepagina van de website geopend.
