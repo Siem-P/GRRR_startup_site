@@ -240,14 +240,14 @@ header .company-name {
 /* Hero intro paragraph */
 
 .hero-intro-text {
-  /* padding: 1.5em; */
   background-color: var(--primary-color-black);
   color: var(--white);
   font-size: large;
 }
 
+
 .hero-intro-text .introduction-text {
-  padding: 1.5em 1em;
+  margin: 0 auto;
 }
 
 .hero-intro-text .hero-intro-image {
