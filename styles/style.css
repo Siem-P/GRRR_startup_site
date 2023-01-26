@@ -388,7 +388,7 @@ article {
 
 /* Partner Section */
 .partners {
-  background-color: var(--primary-color-black);
+  background-color: var(--primary-color-beige);
 }
 
 .partners h2 {
@@ -396,7 +396,7 @@ article {
   justify-content: center;
   font-family: var(--heading-font-bold-condensed);
   font-weight: bolder;
-  color: var(--primary-color-neon-green);
+  color: var(--primary-color-black);
   font-size: 2em;
 }
 
