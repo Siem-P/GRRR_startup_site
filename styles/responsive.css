@@ -58,6 +58,28 @@
     .five-zero-section > .five-zero {
         position: relative;
     }
+
+    .whos-behind-this-article .image-wrapper > .portfolio-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50em;
+    }
+
+    main > article > h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    main > article p {
+        margin: 0 auto;
+    }
+
+    .hero-text-intro .introduction-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1920px) {

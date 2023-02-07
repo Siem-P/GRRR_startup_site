@@ -36,7 +36,7 @@ gsap.from(".five-zero-section > span", {
 gsap.from(".image-wrapper .portfolio-image", {
     scrollTrigger: {
         trigger: ".whos-behind-this-article",
-        start: "center 60%",
+        start: "top 30%",
         end: "bottom 80%",
         // markers: true,
         toggleActions: "play none none none",

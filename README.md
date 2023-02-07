@@ -6,7 +6,7 @@
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 Dit project omvat een One-Pager voor de GRRR 50K Campagne website.
 <!-- Voeg een mooie poster visual toe 📸 -->
-
+![landingspage](https://user-images.githubusercontent.com/64197688/214822049-8441246e-fd03-4ef7-8378-77b7ec80599a.png)
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## ⚡ Kenmerken
@@ -17,7 +17,6 @@ Tools
 * 🖥️ Visual Studio Code
 * 🎨 Concepts (iPad)
 * ✍ Pen & Papier
-
 
 Gebruikte technieken
 * 💻 HTML
@@ -33,7 +32,7 @@ Gebruikte technieken
 GSAP wordt ingeladen via een url in de code. 
 
 ## Gebruik
-Op deze website is alle content te zien door middel van er doorheen te scrollen. Alles komt op zn tij
+Op deze website is alle content te zien door middel van er doorheen te scrollen.
 
 ## Licentie
 
